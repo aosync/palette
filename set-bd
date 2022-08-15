@@ -1,0 +1,9 @@
+#!/bin/sh
+
+BACKDROP=$HOME/.fvwm/backdrop.pm
+BACKDROP_CFG=$HOME/.fvwm/backdrop.cf
+
+ln -sf $1 $BACKDROP
+echo $2 > $BACKDROP_CFG
+
+$HOME/rep/palette/load-bd

@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+$HOME/rep/palette/load-res
+$HOME/rep/palette/load-bd
+
+# Restarting fvwm does:
+# - Loading X resources
+# - Loading fvwm config
+FvwmCommand MakeColorset

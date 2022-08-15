@@ -1,0 +1,4 @@
+#!/bin/sh
+ln -sf $1 $HOME/.fvwm/palette.dp
+
+$HOME/rep/palette/load-pal

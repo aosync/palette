@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+PALETTE=$HOME/.fvwm/palette.dp
+BACKDROP=$HOME/.fvwm/backdrop.pm
+BACKDROP_CFG=$HOME/.fvwm/backdrop.cf
+
+read -r COLOR < $BACKDROP_CFG
+
+python $HOME/rep/palette/palette.py $PALETTE $BACKDROP $COLOR | feh --no-fehbg --bg-tile -

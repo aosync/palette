@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PALETTE=$HOME/.fvwm/palette.dp
+
+python $HOME/rep/palette/fvwm.py $PALETTE

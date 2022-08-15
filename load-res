@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PALETTE=$HOME/.fvwm/palette.dp
+
+python $HOME/rep/palette/xresources.py $PALETTE | xrdb -merge -

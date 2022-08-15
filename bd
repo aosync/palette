@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+XDG_DATA_HOME=${XDG_DATA_HOME:-$HOME/.local/share}
+
+pal=$1
+bd=$2
+shift 2
+
+python /home/aws/rep/palette/palette.py $HOME/palettes/$pal $HOME/backdrops/$bd $@ > $XDG_DATA_HOME/Desk.pm
+feh --bg-tile $XDG_DATA_HOME/Desk.pm
